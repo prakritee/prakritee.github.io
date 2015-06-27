@@ -14,8 +14,13 @@
 			*, *:after, *:before {
 				box-sizing: border-box;
 			}
+			html, body {
+				height: 100%;
+				overflow: hidden;
+			}
 			body {
 				color: #555;
+				background: rgb(204, 236, 247);
 				font-family: 'open sans', sans-serif;
 				margin: 0;
 				font-size: 100%;
@@ -36,6 +41,8 @@
 			.main-title {
 				font-size: 5em;
 				font-weight: normal;
+				color: rgb(239, 251, 255);
+				text-shadow: 2px 2px 0px rgb(122, 179, 198);
 			}
 			.scene, .layer {
 				position: absolute;
@@ -46,8 +53,36 @@
 			}
 			.left-plant img {
 				position: absolute;
-				bottom: 0;
+				bottom: -20px;
+				left: -20px;
+			}
+			.right-tree img {
+				position: absolute;
+				bottom: -20px;
+				right: -50px;
+			}
+			.grass-1:after,
+			.grass-2:after,
+			.grass-3:after {
+				content: '';
+				display: block;
+				position: absolute;
+				height: 376px;
 				left: 0;
+				right: 0;
+				bottom: -50px;
+				background: url(grass.png) repeat-x;
+				/*opacity: 0.5;*/
+				width: 300%;
+				left: -100%;
+			}
+			.grass-2:after {
+				bottom: -100px;
+				left: -80%;
+			}
+			.grass-3:after {
+				bottom: -200px;
+				left: -120%;
 			}
 		</style>
 
@@ -56,8 +91,12 @@
 	<body>
 		<h1 class="main-title">Prakriti</h1>
 		<div id="scene" class="scene">
-			<li class="layer left-plant" data-depth="0.80"><img src="left-plant.png"></li>
-			<li class="layer right-tree" data-depth="1.00"><img src="right-tree.png"></li>
+			<li class="layer" data-depth="0.60"></li>
+			<li class="layer grass-1" data-depth="0.10"></li>
+			<li class="layer grass-2" data-depth="0.40"></li>
+			<li class="layer grass-3" data-depth="0.70"></li>
+			<li class="layer left-plant" data-depth="0.50"><img src="left-plant.png"></li>
+			<li class="layer right-tree" data-depth="0.50"><img src="right-tree.png"></li>
 		</div>
 
 
@@ -67,7 +106,12 @@
 
 		// Pretty simple huh?
 		var scene = document.getElementById('scene');
-		var parallax = new Parallax(scene);
+		var parallax = new Parallax(scene, {
+			// frictionX: .1,
+			scalarX: 12,
+			// frictionY: .1,
+			scalarY: 3
+		});
 
 		</script>
 
