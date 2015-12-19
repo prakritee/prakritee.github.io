@@ -6,10 +6,9 @@
 		<meta name="description" content="Code and Create" />
 		<title>Prakriti</title>
 
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
-		<!-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900' rel='stylesheet' type='text/css'> -->
+		<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<style>
 			*, *:after, *:before {
 				box-sizing: border-box;
@@ -18,13 +17,16 @@
 				color: #555;
 				font-family: 'open sans', sans-serif;
 				margin: 0;
+				font-size: 1.2em;
 			}
-			.float--right { float: right; }
-			.float--left { float: left; }
+			.fl--rt { float: right; }
+			.fl--lt { float: left; }
 			.text--center { text-align: center; }
 			.caps { text-transform: uppercase; }
+			.bold { font-weight: bold }
+			.green { color: yellowgreen; }
 			a {
-				color: inherit;
+				color: #F16652;
 				text-decoration: none;
 			}
 			a:hover {
@@ -35,7 +37,10 @@
 				color: #AAA;
 			}
 			.outer-wrap {
-				width: 1200px;
+				width: 1000px;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
 				margin: 0 auto;
 				transition: 0.25s ease 0.1s;
 			}
@@ -44,30 +49,29 @@
 				text-align: center;
 				padding: 32px 0;
 			}
+			.content-wrap {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
 			footer {
 				padding: 32px;
 				margin-top: 64px;
 				color: #AAA;
-				background: #EEE;
+				/*position: fixed;*/
+				bottom: 0;
+				left: 0;
+				right: 0;
 				text-align: center;
 			}
 			.main-title {
-				text-transform: uppercase;
-				font-size: 20px;
+				/*text-transform: uppercase;*/
+				font-size: 60px;
 				text-decoration: none;
-				letter-spacing: 6px;
+				/*letter-spacing: 6px;*/
 				color: inherit;
 				font-weight: bold;
-			}
-			.sidebar {
-				position: fixed;
-				top: 0;
-				bottom: 0;
-				right: 0;
-				width: 400px;
-				background: #444;
-				transform: translateX(100%);
-				transition: 0.2s ease-out;
 			}
 			.doc > a {
 				color: #aaa;
@@ -105,31 +109,19 @@
 	<body>
 		<div class="outer-wrap">
 			<header>
-				<div class="float--left">
-					<div class="share-box">`
-						<a href=""class="icon-btn" ><i class="fa  fa-l  fa-twitter"></i></a>
-						<a href=""class="icon-btn" ><i class="fa  fa-l  fa-facebook"></i></a>
-					</div>
+				<div class="fl--rt">
+					<a href="/blog">Blog</a>
 				</div>
-				<a href="/" class="main-title">Prakriti</a>
-				<div class="float--right">
-					<a class="icon-btn" href="javascript:void(0)" onclick="toggleMenu()" id="js-menu-btn"><i class="fa  fa-lg  fa-navicon"></i></a>
-				</div>
+
 			</header>
 
-			<div class="text--center">
-				<img class="logo" src="logo.png" style="margin:2em 0;" alt="">
-				<h1 class="caps">Bringing Vedic science to you</h1>
+			<div class="content-wrap text--center">
+				<h1 class="main-title"><span style="color:#FAB117">Prakriti</span> <span style="color:yellowgreen">(प्रकृति )</span></h1>
+				<p><span class="bold  green" style="font-size:1.2em">"Prakriti"</span> means Nature in Hindi language. <span class="bold green">Prakriti</span> is our effort towards making Earth a better place.</p>
 			</div>
-
-
+			<footer>An initiate by Parag Gour<br>Website designed by <a href="https://twitter.com/chinchang457">Kushagra Gour</a></footer>
 		</div>
-		<footer>Copyright 2015 Parag Gour<br>Website designed by <a href="https://twitter.com/chinchang457">Kushagra Gour</a></footer>
 
-		<div class="sidebar">
-			<ul id="js-docs">
-			</ul>
-		</div>
 
 	</body>
 
