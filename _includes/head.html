@@ -30,6 +30,9 @@
       .text--center { text-align: center; }
       .caps { text-transform: uppercase; }
       .bold { font-weight: bold }
+      .grid__item { float: left; }
+      .one-half { width: 50%; }
+      .one-third { width: 33.33%; }
       .green { color: yellowgreen; }
       a {
         color: #F16652;
@@ -38,6 +41,25 @@
       a:hover {
         text-decoration: underline;
         color: #F47322;
+      }
+      .img-container {
+          width: 100%;
+          max-width: 700px;
+          margin: 2em auto;
+      }
+      .cols {
+          -moz-column-count:3;
+          -moz-column-gap: 3%;
+          -moz-column-width: 30%;
+          -webkit-column-count:3;
+          -webkit-column-gap: 3%;
+          -webkit-column-width: 30%;
+          column-count: 3;
+          column-gap: 3%;
+          column-width: 30%;
+      }
+      .img-container__img {
+          margin-bottom: 20px;
       }
       .icon-btn {
         color: #AAA;
@@ -97,6 +119,11 @@
         color: white;
         width: 12em;
         height: 12em;
+      }
+      img {
+        max-width: 100%;
+        padding: 15px;
+        border: 1px solid #EEE;
       }
 
       @media screen and (max-width: 900px) {
