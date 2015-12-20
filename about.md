@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: About Us
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hello environment lover,
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+<span class="bold green">Prakriti</span> is an initiative by <a href="https://www.facebook.com/parag.gour.7">Parag Gour</a>, a young environmental engineer from DTU.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+The aim for this initiative is to use traditional Indian scientific knowledge that has been existent for thousands of years but left ignored in the various aspect of life. Through <span class="bold green">Prakriti</span>, we aspire to connect people with nature through every way possible.

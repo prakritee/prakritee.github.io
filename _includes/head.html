@@ -72,7 +72,7 @@
         margin: 0 auto;
         transition: 0.25s ease 0.1s;
       }
-      header {
+      .main-header {
         margin-bottom: 32px;
         padding: 32px 0;
       }
@@ -92,11 +92,19 @@
         right: 0;
         text-align: center;
       }
+      .header-logo {
+        border-radius: 50%;
+        width: 48px;
+        border: 0;
+        padding: 0;
+        margin-right: 10px;
+        vertical-align: middle;
+        position: relative;
+        top: -3px;
+      }
       .main-title {
-        /*text-transform: uppercase;*/
         font-size: 60px;
         text-decoration: none;
-        /*letter-spacing: 6px;*/
         color: inherit;
         font-weight: bold;
       }
@@ -106,19 +114,15 @@
         line-height: 1.6em;
         word-spacing: 4px;
       }
-
-      .share-box a {
-        margin-left: 10px;
+      .page-nav {
+        position:relative;
+        top:6px;
       }
-      .share-box {
+      .page-nav__link {
+        margin-left: 20px;
       }
-      .logo {
-        display: inline-block;
-        border-radius: 50%;
-        /*background: url(logo.png);*/
-        color: white;
-        width: 12em;
-        height: 12em;
+      .post-meta {
+        opacity: 0.3;
       }
       img {
         max-width: 100%;
