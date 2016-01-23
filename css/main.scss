@@ -42,6 +42,126 @@ $on-laptop:        800px;
     }
 }
 
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	color: #555;
+	font-family: 'montserrat', sans-serif;
+	margin: 0;
+	font-size: 1.2em;
+}
+.fl--rt { float: right; }
+.fl--lt { float: left; }
+.text--center { text-align: center; }
+.caps { text-transform: uppercase; }
+.bold { font-weight: bold }
+.grid__item { float: left; }
+.one-half { width: 50%; }
+.one-third { width: 33.33%; }
+.green { color: yellowgreen; }
+a {
+	color: #F16652;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #F47322;
+}
+p {
+	color: #666;
+}
+.btn {
+	background: none;
+	border: 2px solid white;
+	border-radius: 4px;
+	color: white;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+.btn--big {
+	font-size: 2em;
+	padding: 10px 40px
+}
+.row {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.outer-wrap {
+	// width: 900px;
+	min-height: calc(100vh - 140px);
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	// margin: 0 auto;
+	transition: 0.25s ease 0.1s;
+}
+.main-header {
+	margin-bottom: 32px;
+	padding: 32px 0;
+}
+.content-wrap {
+	-webkit-flex: 1;
+	flex: 1;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+footer {
+	padding: 32px;
+	margin-top: 64px;
+	color: #AAA;
+	text-align: center;
+}
+.header-logo {
+	border-radius: 50%;
+	width: 48px;
+	border: 0;
+	padding: 0;
+	margin-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+}
+.main-title {
+	font-size: 60px;
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+.post-content {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	line-height: 1.6em;
+	word-spacing: 4px;
+}
+.page-nav {
+	position:relative;
+	top:6px;
+}
+.page-nav__link {
+	margin-left: 20px;
+}
+.post-meta {
+	opacity: 0.3;
+}
+img {
+	max-width: 100%;
+	padding: 15px;
+	border: 1px solid #EEE;
+}
+
+@media screen and (max-width: 900px) {
+	.outer-wrap {
+		width: auto;
+		padding: 20px;
+	}
+}
+
 .img-container {
 	width: 100%;
 	max-width: 700px;
@@ -60,4 +180,40 @@ $on-laptop:        800px;
 }
 .img-container__img {
 	margin-bottom: 20px;
+}
+.hero {
+	background-image: url(/images/products/white-sella-basmati.jpg);
+    padding: 240px 0 190px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    margin-bottom: 4em;
+}
+.hero:before {
+	content: '';
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 3em;
+    top: 0;
+    line-height: 10em;
+    // background: rgba(177, 255, 61, 0.5);
+    background: rgba(229,154,19,0.5);
+    background: rgba(0,164,255,0.5);
+}
+.hero__content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30%;
+	text-align: center;
+	color: white;
+
+	h1 {
+		font-size: 3em;
+	}
 }
