@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Brown Basmati Rice
-permalink: /products/brown-rice/
+permalink: /products/brown-basmati-rice/
+hero_img: /images/products/brown-basmati-rice.jpg
 ---
 
 Ayurveda describes that all the nutrients of cereals, grains, fruits and vegetables are present in the outermost covering and hence these rice are the healthiest of all the rice. These are unpolished and so the intact bran gives you wholesome nutrients. They are easily digestible and are good for diabetic, cardiac patients and small children. They are high in fiber and good for people going to gym to reduce their weight.

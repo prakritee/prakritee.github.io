@@ -14,7 +14,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #fdfdfe;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -50,6 +50,7 @@ body {
 	font-family: 'montserrat', sans-serif;
 	margin: 0;
 	font-size: 1.2em;
+	background: $background-color;
 }
 .fl--rt { float: right; }
 .fl--lt { float: left; }
@@ -135,9 +136,9 @@ footer {
 }
 .post-content {
 	font-size: 1.2em;
-	letter-spacing: 1px;
+	// letter-spacing: 1px;
 	line-height: 1.6em;
-	word-spacing: 4px;
+	// word-spacing: 4px;
 }
 .page-nav {
 	position:relative;
@@ -151,6 +152,8 @@ footer {
 }
 img {
 	max-width: 100%;
+}
+.post-content img {
 	padding: 15px;
 	border: 1px solid #EEE;
 }
@@ -181,8 +184,10 @@ img {
 .img-container__img {
 	margin-bottom: 20px;
 }
+.summary-tile {
+
+}
 .hero {
-	background-image: url(/images/products/white-sella-basmati.jpg);
     padding: 240px 0 190px;
     margin: 0 auto;
     width: 100%;
