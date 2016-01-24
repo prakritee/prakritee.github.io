@@ -119,7 +119,6 @@ p {
 		padding-right: 32px;
 	}
 }
-
 .content-wrap {
 	-webkit-flex: 1;
 	flex: 1;
@@ -154,9 +153,7 @@ footer {
 }
 .post-content {
 	font-size: 1.2em;
-	// letter-spacing: 1px;
 	line-height: 1.6em;
-	// word-spacing: 4px;
 }
 .page-nav {
 	position:relative;
@@ -164,6 +161,21 @@ footer {
 }
 .page-nav__link {
 	margin-left: 20px;
+}
+@include media-query(530px) {
+	.page-nav {
+		float: none;
+		top: 26px;
+		display: flex;
+		justify-content: center;
+	}
+	.page-nav__link {
+		margin: 0 10px;
+		text-align: center;
+		border: 2px solid #F16652;
+		border-radius: 4px;
+		padding: 9px 10px;
+	}
 }
 .post-meta {
 	opacity: 0.3;
