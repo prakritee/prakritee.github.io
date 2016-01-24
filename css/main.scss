@@ -70,7 +70,7 @@ a:hover {
 	color: #F47322;
 }
 p {
-	color: #666;
+	color: #777;
 }
 .btn {
 	background: none;
@@ -80,6 +80,12 @@ p {
 	padding: 5px 20px;
 	cursor: pointer;
 }
+.btn--white {
+	border-color: white;
+}
+.btn:hover {
+	color: white;
+}
 .btn--big {
 	font-size: 2em;
 	padding: 10px 40px
@@ -87,6 +93,11 @@ p {
 .row {
 	max-width: 900px;
 	margin: 0 auto;
+}
+@include media-query(960px) {
+	.row {
+		margin: 0;
+	}
 }
 .outer-wrap {
 	// width: 900px;
@@ -102,6 +113,13 @@ p {
 	margin-bottom: 32px;
 	padding: 32px 0;
 }
+@include media-query(960px) {
+	.main-header {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
 .content-wrap {
 	-webkit-flex: 1;
 	flex: 1;
@@ -185,7 +203,38 @@ img {
 	margin-bottom: 20px;
 }
 .summary-tile {
-
+	width: 20vw;
+	width: 370px;
+	padding: 0;
+	margin: 20px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(43,59,93,.29);
+}
+.summary-tile__img {
+	height: 200px;
+	background-size: cover;
+	background-position: 50%;
+	transition: 0.4s ease;
+}
+.summary-tile__title {
+	padding: 20px;
+}
+.tile-container {
+	display: flex;
+}
+@include media-query(400px) {
+	.summary-tile {
+		width: 100%;
+		margin: 0 0 20px;
+	}
+}
+@include media-query(960px) {
+	.tile-container {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .hero {
     padding: 240px 0 190px;
