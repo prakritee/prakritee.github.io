@@ -2,7 +2,7 @@
 layout: page
 title: Brown Basmati Rice
 permalink: /products/brown-basmati-rice/
-hero_img: /images/products/brown-basmati-rice.jpg
+hero_img: /images/products/brown-basmati-rice-big.jpg
 buy_link: http://goo.gl/forms/vAFq62bGCr
 ---
 
