@@ -203,7 +203,7 @@ img {
 	max-width: 700px;
 	margin: 2em auto;
 }
-.cols {
+.cols--3 {
 	-moz-column-count:3;
 	-moz-column-gap: 3%;
 	-moz-column-width: 30%;
@@ -213,6 +213,17 @@ img {
 	column-count: 3;
 	column-gap: 3%;
 	column-width: 30%;
+}
+.cols--2 {
+	-moz-column-count:2;
+	-moz-column-gap: 3%;
+	-moz-column-width: 40%;
+	-webkit-column-count:2;
+	-webkit-column-gap: 3%;
+	-webkit-column-width: 40%;
+	column-count: 2;
+	column-gap: 3%;
+	column-width: 40%;
 }
 .img-container__img {
 	margin-bottom: 20px;

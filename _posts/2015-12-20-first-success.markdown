@@ -19,7 +19,7 @@ categories: update story
 
 </div>
 
-<div class="img-container  cols">
+<div class="img-container  cols--3">
 	<img src="/images/2015/12/ploughing.jpg" alt="" class="img-container__img">
 	<img src="/images/2015/12/flatting.jpg" alt="" class="img-container__img">
 	<img src="/images/2015/12/waterwater.jpg" alt="" class="img-container__img">

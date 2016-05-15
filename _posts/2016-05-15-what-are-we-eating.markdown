@@ -20,12 +20,11 @@ Well, finally we have pure rice and wheat in our home and this time even our cow
 Some clicks from the farm this *zaid* season:-
 
 
-<div class="img-container  cols">
-	<img src="/images/2016/05/pulse-ploughing.jpg" alt="" class="img-container__img">
-	<img src="/images/2016/05/pulse-sowing.jpg" alt="" class="img-container__img">
-	<img src="/images/2016/05/engine-1.jpg" alt="" class="img-container__img">
-	<img src="/images/2016/05/engine-2.jpg" alt="" class="img-container__img">
-	<img src="/images/2016/05/pulse-plants.jpg" alt="" class="img-container__img">
-	<img src="/images/2016/05/pulse-spraying.jpg" alt="" class="img-container__img">
-
+<div class="img-container  cols--2">
+	<img src="/images/2016/05/pulse-ploughing.jpg" title="Ploughing of field with mighty bullocks" alt="" class="img-container__img">
+	<img src="/images/2016/05/pulse-sowing.jpg" title="Sowing of seeds" alt="" class="img-container__img">
+	<img src="/images/2016/05/engine-1.jpg" title="Manuare preparation with water engine in the background" alt="" class="img-container__img">
+	<img src="/images/2016/05/engine-2.jpg" title="Manuare drums" alt="" class="img-container__img">
+	<img src="/images/2016/05/pulse-plants.jpg" title="Cute moong saplings" alt="" class="img-container__img">
+	<img src="/images/2016/05/pulse-spraying.jpg" title="Spraying goumutra to prevent harmful pests/insects" alt="" class="img-container__img">
 </div>
