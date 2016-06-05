@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A bit that makes a difference"
-date:   2016-05-15 04:19:39
+date:   2016-06-05 06:02:39
 categories: update story
 ---
 
