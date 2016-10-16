@@ -69,7 +69,7 @@ a:hover {
 	text-decoration: underline;
 	color: #F47322;
 }
-p {
+.post-content {
 	color: #777;
 }
 .btn {
@@ -150,6 +150,10 @@ footer {
 	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
+}
+.post-title {
+	font-size: 2em;
+	margin-bottom: 20px;
 }
 .post-content {
 	font-size: 1.2em;
