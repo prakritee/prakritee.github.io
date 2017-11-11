@@ -9,7 +9,7 @@
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
@@ -50,6 +50,7 @@ body {
 	font-family: 'montserrat', sans-serif;
 	margin: 0;
 	font-size: 1.2em;
+	line-height: 1.5;
 	background: $background-color;
 }
 .fl--rt { float: right; }
@@ -156,7 +157,7 @@ footer {
 	margin-bottom: 20px;
 }
 .post-content {
-	font-size: 1.2em;
+	// font-size: 1.2em;
 	line-height: 1.6em;
 }
 .page-nav {
@@ -319,7 +320,7 @@ img {
 	padding: 2em;
 	position: relative;
 }
-.testimonial__body:before {
+.testimonial--with-quote .testimonial__body:before {
 	color: rgba(0,0,0,0.3);
 	pointer-events: none;
 	content: "\201C";
