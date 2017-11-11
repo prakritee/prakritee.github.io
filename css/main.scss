@@ -117,8 +117,8 @@ a:hover {
 .main-header {
 	// margin-bottom: 32px;
 	padding: 32px 0 0;
-	margin-bottom: -30px;
 	display: flex;
+	margin-bottom: -30px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -126,6 +126,16 @@ a:hover {
 	.main-header {
 		padding-left: 32px;
 		padding-right: 32px;
+		margin-bottom: 10px;
+		flex-direction: column;
+	}
+	.main-header > a {
+		width: 300px!important;
+		height: 130px!important;
+	}
+	.home-content {
+		width: auto!important;
+		margin-left: 0px !important;
 	}
 }
 .content-wrap {
