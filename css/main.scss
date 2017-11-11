@@ -123,6 +123,9 @@ a:hover {
 	align-items: center;
 }
 @include media-query(960px) {
+	body {
+		font-size: 14px;
+	}
 	.main-header {
 		padding-left: 32px;
 		padding-right: 32px;
@@ -136,6 +139,15 @@ a:hover {
 	.home-content {
 		width: auto!important;
 		margin-left: 0px !important;
+	}
+	.hero {
+		padding: 20px 0 !important;
+	}
+	.hero__content {
+		position: relative!important;
+	}
+	.btn--big {
+		font-size: 1em;
 	}
 }
 .content-wrap {
