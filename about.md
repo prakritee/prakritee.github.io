@@ -32,16 +32,3 @@ To connect people with nature by introducing the most natural & traditional form
 	</div>
 	<!-- <div class="testimonial__by">- <strong>Sandhya Choubey</strong>, Gujrat</div> -->
 </div>
-
-<div class="testimonial">
-	<div class="testimonial__body">
-		<p>
-            <strong>Inderjot Kaur</strong> - Co-founder & Marketing Partner (Prakriti) & an MBA as well as Yoga Teacher (certified by Government of India) by Qualification.
-        </p>
-        <p>Meeting & Knowing Parag an year back was one of the blessings where our passions and visions combined to work together & give back to the society.
-        </p>
-        <p>
-        For me its' like passion coming into action!!! It gives me a deep sense of satisfaction to bring on a platter the most traditional and purest form of Desi Ghee back to society.
-        </p>
-    </div>
-</div>
