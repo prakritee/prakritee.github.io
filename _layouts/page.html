@@ -7,7 +7,7 @@ layout: default
   <section class="hero" style="background-image:url('{{ page.hero_img }}')">
     <div class="hero__content">
       <h1>{{ page.title }}</h1>
-      <a href="tel:+919990551429" target="_blank" class="btn  btn--white  btn--big">To place order - call 9990551429</a>
+      <button class="btn  btn--white  btn--big" onclick="triggerBuy()">Buy now</button>
     </div>
   </section>
   {% endif %}
@@ -19,5 +19,13 @@ layout: default
   <article class="post-content  row">
     {{ content }}
   </article>
+
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <a class="gumroad-button" href="{{ page.buy_link}}" target="_blank">Buy my product</a>
+  <script>
+    function triggerBuy() {
+      document.querySelector('.gumroad-button').click();
+    }
+  </script>
 
 </div>
