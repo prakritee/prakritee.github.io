@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="post">
+  {% assign product = site.data.products[page.product_key] %}
+  {% if product.hero_img %}
+  <section class="hero" style="background-image:url('{{ product.hero_img }}')">
+    <div class="hero__content">
+      <h1>{{ product.label }}</h1>
+      <button class="btn  btn--white  btn--big" onclick="triggerBuy()">Buy now</button>
+    </div>
+  </section>
+  {% endif %}
+
+  <header class="post-header  row">
+    <h1 class="post-title">{{ product.label }}</h1>
+  </header>
+
+  <article class="post-content  row">
+    ![]({{product.image}})
+
+    {{ content }}
+  </article>
+
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <a class="gumroad-button" href="{{ page.buy_link}}" target="_blank">Buy my product</a>
+  <script>
+    function triggerBuy() {
+      document.querySelector('.gumroad-button').click();
+    }
+  </script>
+
+</div>

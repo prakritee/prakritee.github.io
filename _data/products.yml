@@ -1,0 +1,63 @@
+list:
+  - ghee
+  - angrakshakmrida
+  - panchgavyaghrit
+  - herbalspray
+  - keshtail
+  - gomutraasav
+  - haldighanvati
+  - giloyadiark
+  - punarnavadiark
+ghee:
+  label: A2 Cow Ghee
+  permalink: /products/a2-cow-ghee
+  image: /images/products/ghee.png
+  hero_img: /images/products/ghee.jpg
+  buy_link: https://gum.co/prakriti-ghee
+angrakshakmrida:
+  label: Angrakshak Mrida
+  permalink: /products/angrakshak-mrida/
+  image: /images/products/angrakshak-mrida.jpg
+  hero_img: /images/products/angrakshak-mrida.jpg
+  buy_link: https://www.gaurashtra.com/angrakshak-mrida
+panchgavyaghrit:
+  label: Prakriti Panchgavya Ghrit
+  permalink: /products/panchgavya-ghrit/
+  image: /images/products/panchgavya-ghrit.png
+  hero_img: /images/products/panchgavya-ghrit.png
+  buy_link: https://www.gaurashtra.com/brands/prakriti-panchgavya/prakriti-ayurvedic-nasal-drops
+herbalspray:
+  label: Prakriti Herbal Spray
+  permalink: /products/herbal-spray/
+  image: /images/products/herbal-spray.png
+  hero_img: /images/products/herbal-spray.png
+  buy_link: https://www.gaurashtra.com/brands/prakriti-panchgavya/herbal-skin-spray
+keshtail:
+  label: Prakriti Ayurvedic Kesh Tail
+  permalink: /products/kesh-tail/
+  image: /images/products/kesh-tail.png
+  hero_img: /images/products/kesh-tail.png
+  buy_link: https://www.gaurashtra.com/brands/prakriti-panchgavya/prakriti-hair-oil
+gomutraasav:
+  label: Prakriti Gomutra Asav
+  permalink: /products/gomutra-asav/
+  image: /images/products/gomutra-asav.png
+  hero_img: /images/products/gomutra-asav.png
+  buy_link: https://www.gaurashtra.com/brands/prakriti-panchgavya/prakriti-gomutra-asav
+haldighanvati:
+  label: Prakriti Haldi Gomutra Ghanvati
+  permalink: /products/haldi-ghanvati/
+  image: /images/products/haldi-ghanvati.png
+  hero_img: /images/products/haldi-ghanvati.png
+  buy_link: https://www.gaurashtra.com/brands/prakriti-panchgavya/prakriti-haldi-ghanvati
+giloyadiark:
+  label: Prakriti Giloyadi Gomutra Ark
+  permalink: /products/giloyadi-ark/
+  image: /images/products/giloyadi-ark.png
+  hero_img: /images/products/giloyadi-ark.png
+punarnavadiark:
+  label: Prakriti Punarnavadi Ark
+  permalink: /products/punarnavadi-ark/
+  image: /images/products/punarnavadi-ark.png
+  hero_img: /images/products/punarnavadi-ark.png
+  buy_link: https://www.gaurashtra.com/brands/prakriti-panchgavya/prakriti-punarnavadi-ark
