@@ -27,6 +27,26 @@ permalink: /gallery/
     .thumbnail img {
         padding: 0;
     }
+    .mobile-gallery {
+        max-width: 100%;
+        overflow-x: scroll;
+        display: none;
+    }
+    .mobile-gallery {
+        white-space: nowrap;
+    }
+    .mobile-gallery-image {
+        height: 90vh;
+        max-width: initial;
+    }
+@media screen and (max-width: 800px) {
+    .mobile-gallery {
+        display: block;
+    }    
+    .thumbnails, .gallery-full-image {
+        display: none!important;
+    }
+}    
     
 </style>
 
@@ -50,6 +70,14 @@ permalink: /gallery/
         {% for i in (1..25) %}
         <img id="full-image-{{forloop.index}}" class="gallery-full-image" src="https://ik.imagekit.io/prakriti/gallery/{{forloop.index}}.jpg">
         {% endfor %}
+    </div>
+
+    <div class="mobile-gallery">
+        <div class="mobile-gallery-wrap">
+            {% for i in (1..25) %}
+            <img class="mobile-gallery-image" src="https://ik.imagekit.io/prakriti/gallery/{{forloop.index}}.jpg">
+            {% endfor %}
+        </div>
     </div>
 
 </div>
