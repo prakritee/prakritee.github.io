@@ -1,0 +1,55 @@
+---
+layout: page
+title: Gallery
+permalink: /gallery/
+---
+
+<style>
+    .thumbnails {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-full-image {
+        display:none;
+    }
+    {% for i in (1..25) %}
+    #thumb-{{forloop.index}}:checked ~ * #full-image-{{forloop.index}} {
+        display: block;
+    }
+    {% endfor %}
+    .gallery-radio {
+        display: none;
+    } 
+    .thumbnail {
+        margin-bottom: 0!important;
+    }
+    .thumbnail img {
+        padding: 0;
+    }
+    
+</style>
+
+<div style="display:flex;flex-direction:column-reverse;">
+
+    {% for i in (1..25) %}
+    <input {% if forloop.index==1 %}checked{% endif %} type="radio" name="thumbnails" class="gallery-radio" id="thumb-{{forloop.index}}">
+    {% endfor %}
+
+    <ul class="thumbnails">
+        {% for i in (1..25) %}
+        <li class="thumbnail">
+            <label tabindex="0" role="button" for="thumb-{{forloop.index}}">
+                <div><img src="https://ik.imagekit.io/prakriti/tr:h-100/gallery/{{forloop.index}}.jpg"></div>
+            </label>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div>
+        {% for i in (1..25) %}
+        <img id="full-image-{{forloop.index}}" class="gallery-full-image" src="https://ik.imagekit.io/prakriti/gallery/{{forloop.index}}.jpg">
+        {% endfor %}
+    </div>
+
+</div>
