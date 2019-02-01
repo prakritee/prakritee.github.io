@@ -13,5 +13,3 @@ Multani Mitti, Geru Mitti, Haldi, Aloe vera, Neem, Bhemseni kapoor (Natural camp
 ### Directions to use
 
 Use it in Gulab jal, milk or curd (for very dry skin) or just plain water and feel the beauty of Prakriti while protecting it.
-
-![](/images/products/angrakshak-mrida.jpg)
