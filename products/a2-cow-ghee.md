@@ -22,4 +22,4 @@ Ghee has great medicinal properties which help us in preventing many diseases. S
 
 - Agnihotra from this pure Desi cow ghee is auspicious and helps in removing negativity from your house. It also improves air quality by increasing oxygen levels.
 
-- Put 2-3 drops of this ghee in your both nostrils to get rid of stress, headache, weak eyesight, ear problems, low concentration and memory. Just remember to avoid this when it is cloudy and when you are suffering from cough and cold.
+- Put 2-3 drops of this ghee in your both nostrils to get rid of stress, headache, weak eyesight, ear problems, low concentration and memory.
