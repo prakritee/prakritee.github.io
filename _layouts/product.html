@@ -1,16 +1,21 @@
 ---
 layout: default
 ---
+
 <div class="post">
-  {% assign product = site.data.products[page.product_key] %}
-  {% if product.hero_img %}
+  {% assign product = site.data.products[page.product_key] %} {% if
+  product.hero_img %}
   <section class="hero" style="background-image:url('{{ product.hero_img }}')">
     <div class="hero__content">
       <h1>{{ product.label }}</h1>
-      {% if product.buy_link %}
-      <a class="btn  btn--white  btn--big" href="{{product.buy_link}}">Buy now</a>
-      {% else %}
-      <button class="btn  btn--white  btn--big" onclick="triggerBuy()">Buy now</button>
+      {% if false %}
+      <button class="btn btn--white  btn--big" onclick="triggerBuy()">
+        Buy now
+      </button>
+      {% else if product.buy_link %}
+      <a class="btn btn--white  btn--big" href="{{ product.buy_link }}"
+        >Buy now</a
+      >
       {% endif %}
     </div>
   </section>
@@ -21,21 +26,34 @@ layout: default
   </header>
 
   <article class="post-content  row">
-    <p style="text-align:center">
-      <img src="{{product.image}}" />
+    <p class="ta-c">
+      <img src="{{ product.image }}" />
     </p>
 
     {{ content }}
   </article>
 
+  <p class="ta-c">
+    {% if false %}
+    <button class="btn btn--black  btn--big" onclick="triggerBuy()">
+      Buy now
+    </button>
+    {% else if product.buy_link %}
+    <a class="btn btn--black  btn--big" href="{{ product.buy_link }}"
+      >Buy now</a
+    >
+    {% endif %}
+  </p>
+
   {% if product.onsite_purchase %}
-  <script src="https://gumroad.com/js/gumroad.js"></script>
-  <a class="gumroad-button" href="{{ page.buy_link}}" target="_blank">Buy my product</a>
+  <!-- <script src="https://gumroad.com/js/gumroad.js"></script> -->
+  <!-- <a class="gumroad-button" href="{{ product.buy_link }}" target="_blank"
+    >Buy my product</a
+  > -->
   <script>
     function triggerBuy() {
-      document.querySelector('.gumroad-button').click();
+      document.querySelector(".gumroad-button").click();
     }
   </script>
   {% endif %}
-
 </div>

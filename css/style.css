@@ -26,6 +26,7 @@ body {
   float: left;
 }
 
+.ta-c,
 .text--center {
   text-align: center;
 }
@@ -69,21 +70,30 @@ a:hover {
 
 .btn {
   background: none;
-  border: 2px solid white;
+  border: 2px solid;
   border-radius: 4px;
-  color: white;
   padding: 5px 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn--white {
   border-color: white;
+  background: linear-gradient(0deg, white, #bbb);
+  color: #333;
 }
 
-.btn:hover {
-  color: white;
+.btn--white:hover {
+  background: white;
 }
-
+.btn--black {
+  border-color: black;
+  background: linear-gradient(0deg, black, #555);
+  color: #fff;
+}
+.btn--black:hover {
+  background: black;
+}
 .btn--big {
   font-size: 2em;
   padding: 10px 40px;
