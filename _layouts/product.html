@@ -8,13 +8,14 @@ layout: default
   <section class="hero" style="background-image:url('{{ product.hero_img }}')">
     <div class="hero__content">
       <h1>{{ product.label }}</h1>
-      {% if false %}
-      <button class="btn btn--white  btn--big" onclick="triggerBuy()">
-        Buy now
-      </button>
-      {% else if product.buy_link %}
+
+      {% if product.buy_link %}
       <a class="btn btn--white  btn--big" href="{{ product.buy_link }}"
         >Buy now</a
+      >
+      {% endif %} {% if product.whatsapp %}
+      <a class="btn btn--white  btn--big" href="tel:9990551429"
+        >Whatsapp 9990551429 to order</a
       >
       {% endif %}
     </div>
@@ -34,13 +35,13 @@ layout: default
   </article>
 
   <p class="ta-c">
-    {% if false %}
-    <button class="btn btn--black  btn--big" onclick="triggerBuy()">
-      Buy now
-    </button>
-    {% else if product.buy_link %}
+    {% if product.buy_link %}
     <a class="btn btn--black  btn--big" href="{{ product.buy_link }}"
       >Buy now</a
+    >
+    {% endif %} {% if product.whatsapp %}
+    <a class="btn btn--black  btn--big" href="tel:9990551429"
+      >Whatsapp 9990551429 to order</a
     >
     {% endif %}
   </p>

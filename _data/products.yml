@@ -13,7 +13,8 @@ ghee:
   permalink: /products/a2-cow-ghee
   image: /images/products/ghee.png
   hero_img: /images/products/ghee.jpg
-  buy_link: https://gum.co/prakriti-ghee/super-saver
+  # buy_link: https://gum.co/prakriti-ghee/super-saver
+  whatsapp: true
   onsite_purchase: true
 angrakshakmrida:
   label: Angrakshak Mrida
